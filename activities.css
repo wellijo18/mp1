@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #d3c73e;
+  color: black;
+  padding: calc(1rem + 1vw);
+  border-bottom: 4px solid #757700;
+  text-align: center;
+}
+
+header h1 {
+  font-size: calc(1.5rem + 1vw);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  color: black;
+  background-color: #d3c73e;
+}
+
+nav li {
+  border-bottom: 1px solid #757700;
+  flex: 1;
+  
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: calc(0.8rem + 0.4vw);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #a39b06;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: calc(1rem + 1vw);
+  background-color: rgb(218, 218, 161);
+  margin: 0 auto;
+}
+
+
+.page-title {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer {
+  background-color: #d3c73e;
+  color: black;
+  padding: calc(1rem + 0.5vw);
+  text-align: center;
+  border-top: 4px solid #757700;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+footer a:hover {
+  background-color: #757700;
+}
+
+
+@media screen and (min-width: 750px) {
+  nav {
+      width: 30%;
+      float: left;
+      border-right: 4px solid #757700;
+      height: 100vh;
+      
+  }
+
+  
+  nav ul {
+      display: block;
+      color: black;
+  }
+  
+  nav li {
+      border-bottom: 1px solid #757700;
+      
+  }
+  
+  nav a {
+      display: block;
+  }
+  
+  nav a:hover {
+      background-color: #aa971a;
+  }
+
+  header {
+      text-align: left;
+  }
+  
+  main {
+      width: 70%;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  nav {
+      width: 30%;
+      float: left;
+      border-right: 4px solid #757700;
+      height: 100vh;
+  }
+  
+  header {
+      text-align: left;
+  }
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hobbies-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.activities-content {
+  border-left: 4px solid black;
+  padding-left: 15px; 
+  margin-bottom: 20px;
+}
+
+
+#vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 1rem;
+}
+
+video {
+  width: calc(16vw - 20px);
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+}
+
+textarea {
+  resize: none;
+}

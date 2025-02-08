@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Resume</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Wellington Oliveira</h1>
+        <p>Contact Information</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index/index.html">Home</a></li>
+            <li><a href="../education/education.html">Education</a></li>
+            <li><a href="../employment/employment.html">Employment</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <li><a href="../activities/activities.html">Activities</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="page-title">Contact</h2>
+        <p id="contactp">If you have any questions or opportunities, feel free to reach out to me using the contact details below!</p>
+        <p><b>Address:</b> 18 Jonathan Lane, Malden, MA 02148</p>
+        <p><b>Email:</b> <a href="mailto:wellijo@bu.edu">wellijo@bu.edu</a></p>
+        <p><b>Phone:</b> <a href="tel:3392247790">339-224-7790</a></p>
+
+        <div id="reachout">
+            <h2>Reach Out</h2>
+            <form id="contactForm">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <button onclick="clearForm()">Submit</button>
+            </form>
+        </div>
+        <div>
+            <p id="lim">
+                Feel free to contact me on LinkedIn as well! Thank you for your visit!
+            </p>
+        </div>
+        <script src="contact.js"></script>
+    </main>
+
+    <footer>
+        All Rights Reserved by Wellington Oliveira <a href="#">Credits </a> &copy;
+    </footer>
+
+</body>
+</html>

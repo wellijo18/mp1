@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #cd466a;
+  color: white;
+  padding: calc(1rem + 1vw);
+  border-bottom: 4px solid #e1073d;
+  text-align: center;
+}
+
+header h1 {
+  font-size: calc(1.5rem + 1vw);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  color: black;
+  background-color: #cd466a;
+}
+
+nav li {
+  border-bottom: 1px solid #e1073d;
+  flex: 1;
+  
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: calc(0.8rem + 0.4vw);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0d47a1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: calc(1rem + 1vw);
+  background-color: rgb(211, 129, 150);
+  margin: 0 auto;
+
+}
+
+.page-title {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+footer {
+  background-color: #cd466a;
+  color: white;
+  padding: calc(1rem + 0.5vw);
+  text-align: center;
+  border-top: 4px solid #e1073d;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+footer a:hover {
+  background-color: #e1073d;
+}
+
+
+
+@media screen and (min-width: 750px) {
+  nav {
+      width: 30%;
+      float: left;
+      border-right: 4px solid #e1073d;
+      height: 100vh;
+      
+  }
+
+  nav ul {
+      display: block;
+      color: black;
+  }
+  
+  nav li {
+      border-bottom: 1px solid #e1073d;
+      
+  }
+  
+  nav a {
+      display: block;
+  }
+  
+  nav a:hover {
+      background-color: #bf2899;
+  }
+
+  header {
+      text-align: left;
+  }
+  
+  main {
+      width: 70%;
+  }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+  nav {
+      width: 30%;
+      float: left;
+      border-right: 4px solid #e1073d;
+      height: 100vh;
+  }
+  
+  header {
+      text-align: left;
+  }
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contactp{
+  margin-bottom: 20px;
+}
+
+#reachout {
+  text-align: center;
+}
+
+#lim{
+  text-align: center;
+  margin-top: 50px;
+}

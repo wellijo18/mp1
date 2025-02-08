@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: rgb(0,151,57);
+  color: white;
+  padding: calc(1rem + 1vw);
+  border-bottom: 4px solid #0d47a1;
+  text-align: center;
+}
+
+header h1 {
+  font-size: calc(1.5rem + 1vw);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex: 1;
+  color: black;
+  background-color: rgb(0,151,57);
+}
+
+nav li {
+  border-bottom: 1px solid #1a237e;
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: calc(0.8rem + 0.4vw);
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0d47a1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: calc(1rem + 1vw);
+  background-color: rgb(95, 214, 137);
+  margin: 0 auto;
+}
+
+.page-title {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  color: #0d47a1;
+}
+
+footer {
+  background-color: rgb(0,151,57);
+  color: white;
+  padding: calc(1rem + 0.5vw);
+  text-align: center;
+  border-top: 4px solid #0d47a1;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  nav {
+    width: 30%;
+    float: left;
+    border-right: 4px solid #1a237e;
+    height: 100vh;
+  }
+
+  nav ul {
+    display: block;
+    color: black;
+  }
+
+  nav li {
+    border-bottom: 1px solid #1a237e;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  nav a:hover {
+    background-color: #0d47a1;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  main {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    width: 30%;
+    float: left;
+    border-right: 4px solid #1a237e;
+    height: 100vh;
+  }
+
+  header {
+    text-align: left;
+  }
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-content {
+  border-left: 4px solid #0d47a1;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.projects-content ul {
+  list-style: none;
+}
+
+#signs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#signs button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: rgba(173, 216, 230, 0.8);
+  border: 2px solid #87CEEB;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signs button:hover {
+  background-color: rgba(135, 206, 235, 0.9);
+}
+
+
+#outputbox {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffacd;
+  border-radius: 5px;
+  text-align: center;
+  color: #006400;
+  font-size: 1.2rem;
+}
+
+#inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+#calc {
+  background-image: url("brazil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 10px;
+  height: 200%;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#brazil-title {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  color: rgb(1, 33, 105);
+  display: flex;
+  font-family: 'Pacifico', cursive;
+  font-size: calc(2rem + 1.5vw);
+}
+
+#actualCalc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  min-height: 15vh;
+}
+
+#inputs input {
+  width: calc(100px + 5vw);
+  padding: 10px;
+  font-size: calc(1rem);
+  background-color: #fffacd;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#inputs input::placeholder {
+  color: #006400;
+}
+
+h3{
+  color: #0d47a1;
+}
